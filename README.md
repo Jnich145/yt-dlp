@@ -16,6 +16,55 @@
 </div>
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
+# yt-dlp GUI
+
+## Overview
+
+The yt-dlp GUI is a powerful graphical front-end for the robust yt-dlp video downloader. Designed for professional users and content creators, this intuitive interface simplifies the process of downloading videos, extracting audio, and managing media. By combining advanced features with ease-of-use, the GUI makes it effortless to leverage the full capabilities of yt-dlp without relying on command-line interactions.
+
+## Installation and Running Instructions
+
+Follow these steps to set up a virtual environment, install all necessary dependencies, and launch the GUI:
+
+### 1. Create and Activate a Virtual Environment
+
+For Linux/macOS:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+For Windows:
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 2. Install Dependencies
+
+Install yt-dlp, PyQt6, and any additional required packages:
+```
+pip install yt-dlp PyQt6
+```
+
+Alternatively, if a requirements file is provided:
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the yt-dlp GUI
+
+Launch the GUI by running:
+```
+python yt_dlp_gui.py
+```
+
+Enjoy using the yt-dlp GUI to seamlessly download and manage your video content!
+
+---
+
+<!-- MANPAGE: END OF GUI BLOCK INSERTION -->
+
 yt-dlp is a feature-rich command-line audio/video downloader with support for [thousands of sites](supportedsites.md). The project is a fork of [youtube-dl](https://github.com/ytdl-org/youtube-dl) based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc).
 
 <!-- MANPAGE: MOVE "USAGE AND OPTIONS" SECTION HERE -->
@@ -1511,7 +1560,6 @@ Also filtering work for comparisons `=` (equals), `^=` (starts with), `$=` (ends
 Any string comparison may be prefixed with negation `!` in order to produce an opposite comparison, e.g. `!*=` (does not contain). The comparand of a string comparison needs to be quoted with either double or single quotes if it contains spaces or special characters other than `._-`.
 
 **Note**: None of the aforementioned meta fields are guaranteed to be present since this solely depends on the metadata obtained by the particular extractor, i.e. the metadata offered by the website. Any other field made available by the extractor can also be used for filtering.
-
 Formats for which the value is not known are excluded unless you put a question mark (`?`) after the operator. You can combine format filters, so `-f "bv[height<=?720][tbr>500]"` selects up to 720p videos (or videos where the height is not known) with a bitrate of at least 500 kbps. You can also use the filters with `all` to download all formats that satisfy the filter, e.g. `-f "all[vcodec=none]"` selects all audio-only formats.
 
 Format selectors can also be grouped using parentheses; e.g. `-f "(mp4,webm)[height<480]"` will download the best pre-merged mp4 and webm formats with a height lower than 480.
@@ -2372,3 +2420,53 @@ See [CONTRIBUTING.md](CONTRIBUTING.md#contributing-to-yt-dlp) for instructions o
 
 # WIKI
 See the [Wiki](https://github.com/yt-dlp/yt-dlp/wiki) for more information
+
+# yt-dlp GUI
+
+## Overview
+
+The yt-dlp GUI is a powerful graphical front-end for the robust yt-dlp video downloader. Designed for professional users and content creators, this intuitive interface simplifies the process of downloading videos, extracting audio, and managing media. By combining advanced features with ease-of-use, the GUI makes it effortless to leverage the full capabilities of yt-dlp without relying on command-line interactions.
+
+## Installation and Running Instructions
+
+Follow these steps to set up a virtual environment, install all necessary dependencies, and launch the GUI:
+
+### 1. Create and Activate a Virtual Environment
+
+For Linux/macOS:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+For Windows:
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 2. Install Dependencies
+
+Install yt-dlp, PyQt6, and any additional required packages:
+```
+pip install yt-dlp PyQt6
+```
+
+Alternatively, if a requirements file is provided:
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the yt-dlp GUI
+
+Launch the GUI by running:
+```
+python yt_dlp_gui.py
+```
+
+Enjoy using the yt-dlp GUI to seamlessly download and manage your video content!
+
+---
+
+<!-- Existing README content (if any) follows -->
+
