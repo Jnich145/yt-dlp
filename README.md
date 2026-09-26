@@ -16,50 +16,11 @@
 </div>
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
-# yt-dlp GUI
+# This fork: an experimental yt-dlp GUI
 
-## Overview
+This is [Justin Nichols’s](https://github.com/Jnich145) fork of [yt-dlp](https://github.com/yt-dlp/yt-dlp), adding a PyQt6 desktop interface in [yt_dlp_gui.py](yt_dlp_gui.py). The downloader, upstream releases, and documentation below remain the work of the yt-dlp project and its contributors.
 
-The yt-dlp GUI is a powerful graphical front-end for the robust yt-dlp video downloader. Designed for professional users and content creators, this intuitive interface simplifies the process of downloading videos, extracting audio, and managing media. By combining advanced features with ease-of-use, the GUI makes it effortless to leverage the full capabilities of yt-dlp without relying on command-line interactions.
-
-## Installation and Running Instructions
-
-Follow these steps to set up a virtual environment, install all necessary dependencies, and launch the GUI:
-
-### 1. Create and Activate a Virtual Environment
-
-For Linux/macOS:
-```
-python3 -m venv venv
-source venv/bin/activate
-```
-
-For Windows:
-```
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 2. Install Dependencies
-
-Install yt-dlp, PyQt6, and any additional required packages:
-```
-pip install yt-dlp PyQt6
-```
-
-Alternatively, if a requirements file is provided:
-```
-pip install -r requirements.txt
-```
-
-### 3. Run the yt-dlp GUI
-
-Launch the GUI by running:
-```
-python yt_dlp_gui.py
-```
-
-Enjoy using the yt-dlp GUI to seamlessly download and manage your video content!
+The GUI is a prototype, with controls for URLs, formats, output location, and download progress. Some advanced controls are incomplete. See [GUI.md](GUI.md) for setup, implementation limits, and the distinction between this fork and upstream.
 
 ---
 
